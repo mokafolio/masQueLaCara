@@ -1,12 +1,13 @@
 'use strict';
 
 //some globals to adjust mainly scale related things
-var noiseDiv = 400.0;
-var noiseSampleDist = 100.0;
-var minHeadWidth = 450.0;
-var maxHeadWidth = 600.0;
-var minEyeRad = 30.0;
-var maxEyeRad = 80.0;
+var globalScale = 1.0;
+var noiseDiv = 400.0 * globalScale;
+var noiseSampleDist = 100.0 * globalScale;
+var minHeadWidth = 450.0 * globalScale;
+var maxHeadWidth = 600.0 * globalScale;
+var minEyeRad = 30.0 * globalScale;
+var maxEyeRad = 80.0 * globalScale;
 
 // helper class to noisify the provided path everytime update is called
 class NoisePath
